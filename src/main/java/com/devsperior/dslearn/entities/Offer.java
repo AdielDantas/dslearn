@@ -32,6 +32,9 @@ public class Offer {
     @OneToMany(mappedBy = "offer")
     private List<Resource> resources = new ArrayList<>();
 
+    @OneToMany(mappedBy = "offer")
+    private List<Topic> topics = new ArrayList<>();
+
     public Offer(Long id, String edition, Instant startMoment, Instant endMoment, Course course) {
         this.id = id;
         this.edition = edition;

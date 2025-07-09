@@ -21,7 +21,8 @@ public class Task extends Lesson {
     public Task() {
     }
 
-    public Task(Long id, String title, Integer position, Section section, String description, Integer questionCount, Integer approvalCount, Double weight, Instant dueDate) {
+    public Task(Long id, String title, Integer position, Section section, String description, Integer questionCount,
+                Integer approvalCount, Double weight, Instant dueDate) {
         super(id, title, position, section);
         this.description = description;
         this.questionCount = questionCount;
