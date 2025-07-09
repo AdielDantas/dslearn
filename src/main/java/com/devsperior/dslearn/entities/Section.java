@@ -84,6 +84,14 @@ public class Section {
         this.resource = resource;
     }
 
+    public Section getPrerequisite() {
+        return prerequisite;
+    }
+
+    public void setPrerequisite(Section prerequisite) {
+        this.prerequisite = prerequisite;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
